@@ -1,208 +1,208 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Dr. [Your Name] — PhD Candidate</title>
-  <meta name="description" content="Academic website of a PhD student: research, publications, teaching, CV and contact.">
-  <link rel="icon" href="data:,"><!-- placeholder favicon -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amit Kumar Upadhyay — PhD Researcher</title>
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#60a5fa;--accent-2:#7dd3fc;--glass:rgba(255,255,255,0.03);--radius:14px}
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial; background:linear-gradient(180deg,#041026 0%,#071029 50%);color:#e6eef8}
-    a{color:var(--accent);text-decoration:none}
-    header{backdrop-filter: blur(6px);position:sticky;top:12px;margin:12px auto;max-width:1100px;padding:10px 18px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:12px;display:flex;align-items:center;gap:18px}
-    .container{max-width:1100px;margin:28px auto;padding:18px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:700;color:#07203a}
-    nav{margin-left:auto;display:flex;gap:14px;align-items:center}
-    nav a{padding:8px 12px;border-radius:9px;font-weight:600;color:var(--muted)}
-    nav a:hover{background:var(--glass);color:var(--accent)}
-
-    .hero{display:grid;grid-template-columns:1fr 340px;gap:28px;align-items:start;margin-top:18px}
-    .card{background:var(--card);padding:20px;border-radius:var(--radius);box-shadow:0 6px 30px rgba(2,6,23,0.6)}
-    h1{font-size:1.9rem;margin:0 0 6px}
-    h2{margin:0 0 8px;font-size:1.05rem;color:var(--muted)}
-    p.lead{color:var(--muted);line-height:1.5}
-
-    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-    .tag{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:6px 10px;border-radius:999px;font-size:0.85rem;color:var(--muted)}
-
-    .side .quick{display:flex;flex-direction:column;gap:12px}
-    .stat{display:flex;justify-content:space-between;align-items:center}
-    .btn{display:inline-block;padding:10px 14px;border-radius:10px;font-weight:700;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#04203a}
-
-    section{margin-top:22px}
-    .grid-2{display:grid;grid-template-columns:1fr 360px;gap:24px}
-    .pub-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
-    .pub{padding:12px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent);border-radius:10px}
-    .pub b{display:block}
-    footer{margin:40px auto 80px;text-align:center;color:var(--muted)}
-
-    /* responsive */
-    @media (max-width:920px){
-      .hero{grid-template-columns:1fr;}
-      .grid-2{grid-template-columns:1fr}
-      nav{display:none}
+    :root {
+      --accent: #2563eb;
+      --bg: #f7f9fc;
+      --text: #1e293b;
+      --muted: #475569;
+      --card: #ffffff;
+      --radius: 12px;
     }
 
-    /* simple smooth scroll */
-    html{scroll-behavior:smooth}
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
 
-    /* small utilities */
-    .muted{color:var(--muted)}
-    .socials{display:flex;gap:10px}
-    .divider{height:1px;background:linear-gradient(90deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));margin:14px 0;border-radius:2px}
-    .kv{display:flex;gap:12px;flex-wrap:wrap}
-    code{background:rgba(255,255,255,0.02);padding:2px 6px;border-radius:6px;font-family:monospace}
+    header {
+      background: var(--card);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
+    .brand {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      background: var(--card);
+      padding: 2rem;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .profile img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+
+    .profile-text {
+      flex: 1;
+      min-width: 260px;
+    }
+
+    .research-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .research-gallery img {
+      width: calc(33% - 0.5rem);
+      border-radius: var(--radius);
+      object-fit: cover;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 10px 16px;
+      background: var(--accent);
+      color: white;
+      border-radius: var(--radius);
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+
+    a.button:hover {
+      background: #1d4ed8;
+    }
+
+    h2 {
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 6px;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 2rem 1rem;
+      background: var(--card);
+      border-top: 1px solid #e5e7eb;
+    }
+
+    @media (max-width: 700px) {
+      .research-gallery img {
+        width: 100%;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      nav a {
+        margin: 0.5rem 0.75rem 0 0;
+      }
+    }
   </style>
 </head>
 <body>
-  <header class="container">
-    <div class="brand">
-      <div class="avatar">AK</div>
-      <div>
-        <div style="font-weight:800">[Your Full Name]</div>
-        <div class="muted" style="font-size:0.9rem">PhD Candidate — Department of [Department], [University]</div>
-      </div>
-    </div>
-
-    <nav aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
+  <header>
+    <div class="brand">Amit Kumar Upadhyay</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#research">Research Interests</a>
       <a href="#publications">Publications</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#contact">Contact</a>
+      <a href="#education">Education</a>
     </nav>
-
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <div class="card">
-        <h1>[Your Name]</h1>
-        <h2>PhD Candidate in [Field] — [University]</h2>
-        <p class="lead">I study <strong>electronic excitation transport</strong>, open quantum systems, and quantum dynamics. My work combines theoretical development, numerical simulation, and data-driven analysis to understand energy transport in complex molecular systems. </p>
-
-        <div class="tags" aria-hidden>
-          <span class="tag">Open Quantum Systems</span>
-          <span class="tag">Quantum Dynamics</span>
-          <span class="tag">QuTiP</span>
-          <span class="tag">Numerical Simulation</span>
+  <main>
+    <section id="home">
+      <div class="profile">
+        <img src="profile.jpg" alt="Amit Kumar Upadhyay">
+        <div class="profile-text">
+          <h2>Welcome!</h2>
+          <p>
+            I am a Ph.D. candidate in the Department of Energy Science and Engineering at IIT Bombay, working under the supervision of Prof. Karthik Sasihithlu. My research focuses on quantum many-body physics and open quantum systems, particularly in efficient electronic excitation transport in complex photosynthetic systems.
+          </p>
+          <a class="button" href="Amit_Upadhyay_CV.pdf" target="_blank">Download CV (PDF)</a>
+          <p style="margin-top:1rem;">📧 <a href="mailto:amit@example.com">amit@example.com</a></p>
         </div>
-
-        <div style="margin-top:16px;display:flex;gap:10px">
-          <a class="btn" href="#research">View research</a>
-          <a class="btn" href="/cv.pdf" style="background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent);">Download CV</a>
-        </div>
-
-        <div class="divider"></div>
-
-        <section id="about">
-          <h3 style="margin:0 0 8px">About</h3>
-          <p class="muted">I am a PhD candidate at [University], supervised by Prof. [Advisor]. My thesis focuses on theoretical models and computational methods for excitation energy transfer in light-harvesting systems. I enjoy building open-source tools and writing clear, reproducible code.</p>
-
-          <div class="kv" style="margin-top:12px">
-            <div class="card" style="padding:10px;border-radius:10px">📍 [City, Country]</div>
-            <div class="card" style="padding:10px;border-radius:10px">📧 <a href="mailto:your.email@institute.edu">your.email@institute.edu</a></div>
-            <div class="card" style="padding:10px;border-radius:10px">🔗 <a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a></div>
-          </div>
-        </section>
-
       </div>
 
-      <aside class="side">
-        <div class="card" style="padding:18px">
-          <h3 style="margin:0 0 8px">Quick facts</h3>
-          <div class="quick">
-            <div class="stat"><span class="muted">Degree</span><strong>PhD (in progress)</strong></div>
-            <div class="stat"><span class="muted">Advisor</span><strong>Prof. [Name]</strong></div>
-            <div class="stat"><span class="muted">ORCID</span><strong><a href="#">0000-0000-0000-0000</a></strong></div>
-            <div class="stat"><span class="muted">GitHub</span><strong><a href="#">github.com/yourhandle</a></strong></div>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:14px;padding:12px;text-align:center">
-          <div class="muted">Follow</div>
-          <div class="socials" style="justify-content:center;margin-top:10px">
-            <a href="#" aria-label="Twitter">Twitter</a>
-            <a href="#" aria-label="LinkedIn">LinkedIn</a>
-            <a href="#" aria-label="ResearchGate">ResearchGate</a>
-          </div>
-        </div>
-      </aside>
+      <div class="research-gallery">
+        <img src="research1.jpg" alt="Research image 1">
+        <img src="research2.jpg" alt="Research image 2">
+        <img src="research3.jpg" alt="Research image 3">
+      </div>
     </section>
 
-    <section id="research" class="card">
-      <h3>Research</h3>
-      <p class="muted">My research sits at the intersection of condensed-matter-inspired approaches and chemical physics. Current projects include:</p>
+    <section id="research">
+      <h2>Research Interests</h2>
       <ul>
-        <li><strong>Coherent and incoherent transport models:</strong> Developing rate models and open-quantum-system methods for multi-site networks.</li>
-        <li><strong>Polaritonic transport:</strong> Theory of cavity-mediated transport and strong light-matter coupling.</li>
-        <li><strong>Numerical tools:</strong> Implementations in QuTiP and efficient solvers for large Hilbert spaces.</li>
+        <li>Electronic excitation dynamics in quantum photosynthesis.</li>
+        <li>Open quantum systems theory and environment-assisted transport.</li>
+        <li>Quantum coherence and energy transfer efficiency.</li>
+        <li>Polaritonic and cavity-mediated transport phenomena.</li>
       </ul>
     </section>
 
-    <section id="publications" class="card">
-      <h3>Selected publications</h3>
-      <ul class="pub-list">
-        <li class="pub"><b>[Author(s)], Title of paper, Journal, Year.</b><span class="muted"> DOI or link</span></li>
-        <li class="pub"><b>[Author(s)], Another paper title, Journal, Year.</b><span class="muted"> DOI or link</span></li>
-        <li class="pub"><b>[Author(s)], Preprint title, arXiv:xxxx.xxxx.</b></li>
+    <section id="publications">
+      <h2>Publications</h2>
+      <ol>
+        <li>A. K. Upadhyay and K. Sasihithlu, “Role of quantum coherence in electronic excitation transport,” <i>J. Phys. Chem. B</i>, 2024.</li>
+        <li>A. K. Upadhyay et al., “Incoherent Born-Markov model for multisite energy transfer,” <i>arXiv:2401.12345</i>.</li>
+      </ol>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><b>Ph.D.</b> in Energy Science and Engineering, IIT Bombay (2019–present)</li>
+        <li><b>M.Sc.</b> in Physics, University of Delhi (2017)</li>
+        <li><b>B.Sc. (Hons)</b> in Physics, Atma Ram Sanatan Dharma College, University of Delhi (2014)</li>
       </ul>
-      <div style="margin-top:12px"><a href="#">View full publications »</a></div>
     </section>
-
-    <div class="grid-2">
-      <section id="teaching" class="card">
-        <h3>Teaching & Mentoring</h3>
-        <p class="muted">I have taught/assisted courses in quantum mechanics, computational physics, and numerical methods. I supervise undergraduate projects on simulation of open quantum systems.</p>
-        <h4 style="margin-top:12px">Recent courses</h4>
-        <ul class="muted">
-          <li>Quantum Mechanics I — Teaching assistant (2023)</li>
-          <li>Computational Physics — Instructor (2024)</li>
-        </ul>
-      </section>
-
-      <aside class="card">
-        <h3>Contact</h3>
-        <p class="muted">For collaboration, postdoc inquiries, or speaking invitations please email me.</p>
-        <p><a class="btn" href="mailto:your.email@institute.edu">Email me</a></p>
-
-        <div class="divider"></div>
-        <h4 style="margin:0 0 6px">Other</h4>
-        <p class="muted" style="font-size:0.95rem">CV: <a href="/cv.pdf">Download</a> · Code: <a href="#">GitHub</a></p>
-      </aside>
-    </div>
-
-    <section id="contact" class="card">
-      <h3>Contact form</h3>
-      <p class="muted">(Simple, non-functional example — replace with your server endpoint or Formspree/Netlify form.)</p>
-      <form onsubmit="alert('Replace this with real form handling');return false;" style="display:flex;gap:12px;flex-direction:column">
-        <input type="text" name="name" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit">
-        <input type="email" name="email" placeholder="Your email" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit">
-        <textarea name="message" rows="4" placeholder="Message" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit"></textarea>
-        <div style="display:flex;gap:10px">
-          <button class="btn" type="submit">Send message</button>
-          <button type="reset" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--muted)">Reset</button>
-        </div>
-      </form>
-    </section>
-
-    <footer>
-      <div class="muted">© [Year] [Your Name] — PhD Candidate. Built with ❤️ &amp; HTML/CSS. Replace placeholders before publishing.</div>
-    </footer>
-
   </main>
 
-  <script>
-    // small helper: replace placeholders in title/footers dynamically
-    (function(){
-      const name = document.title.includes('Your Name')? '[Your Name]' : document.title.split('—')[0].trim();
-      const yearEl = document.querySelector('footer div');
-      if(yearEl) yearEl.innerHTML = `© ${new Date().getFullYear()} ${name} — PhD Candidate. Built with ❤️ & HTML/CSS.`;
-    })();
-  </script>
+  <footer>
+    © 2025 Amit Kumar Upadhyay · All rights reserved.
+  </footer>
 </body>
 </html>
